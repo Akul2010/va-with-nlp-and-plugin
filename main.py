@@ -9,7 +9,7 @@ from sklearn.neural_network import MLPClassifier
 engine = pyttsx3.init()
 
 # Set up the speech recognition
-model = vosk.Model("path/to/model")
+model = vosk.Model("./model")
 recognizer = vosk.KaldiRecognizer(model, 16000)
 
 # Set up the self-learning neural network
